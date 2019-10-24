@@ -1,0 +1,260 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>BKRES-PHU_YEN</title>
+
+    <!-- Custom fonts for this template-->
+
+    <link href="~/Assets/client/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+          rel="stylesheet">
+
+    <!-- Custom styles for this template-->
+
+    <link href="~/Assets/client/css/sb-admin-2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body id="page-top" ng-app="home" >
+
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar" style="color: royalblue">
+
+            <!-- Sidebar - Brand -->
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+                <div class="sidebar-brand-text mx-3">
+                    <i class="fas fa-user-circle"></i>
+                    SANSLAB                    .
+                </div>
+            </a>
+            <hr class="sidebar-divider">
+            <li style="margin-bottom:-2%;margin-left: 5%; margin-top:15%">
+                <a style="color: azure">
+
+                    <h5><i class="fas fa-map-marker-alt" style="color:floralwhite"></i>&nbsp; Địa điểm</h5>
+                </a>
+                <br>
+            </li>
+            <div style="margin-left:15%">
+                <h5  style="color:lightyellow">  <i class="fas fa-map-marker-alt"></i> Đầm Cù Mông</h5>
+                <div style="color:antiquewhite; margin-left: 10%;margin-bottom: 15%; margin-top: 5%" >
+                    <a style="color:floralwhite; margin-bottom:20%; margin-top:15%" href="#"><h6>Giám sát trên MAP</h6></a>
+
+                    <a style="color:floralwhite; margin-bottom:20%; margin-top:15%" ui-sref="device"><h6>Thống kê</h6></a>
+
+
+                </div>
+                <h5  style="color:lightyellow">  <i class="fas fa-map-marker-alt" ></i> Đầm Cù Mông</h5>
+                <div style="color:aliceblue; margin-left: 10%; height: 25px;margin-bottom: 0%; margin-top: 4%">
+
+                    <a style="color:floralwhite; margin-bottom:20%; margin-top:15%" href="#"><h6>Giám sát trên MAP</h6></a>
+
+                    <a style="color:floralwhite; margin-bottom:20%; margin-top:15%" href="#"><h6>Thống kê</h6></a>
+
+
+                </div>
+            </div>
+
+            <!-- Heading -->
+            <!-- Nav Item - Pages Collapse Menu -->
+
+            <li style="margin-bottom:3%;margin-left: 5%;margin-top: 20%">
+                <a style="color: azure">
+
+                    <span>
+                        <i class="fas fa-eye"></i>
+                        Tham số quan trắc
+                    </span>
+                </a>
+                <br>
+            </li>
+            <li style="color:lavenderblush; margin-left: 20%;font-weight: 400;">
+                <div class="custom-control custom-radio ">
+                    <input type="radio" style="color:goldenrod;" class="custom-control-input" id="NH4" name="param" value="customEx">
+                    <label class="custom-control-label" for="NH4">NH4</label>
+                </div>
+                <div class="custom-control custom-radio">
+                    <input type="radio" class="custom-control-input" id="NO2" name="param" value="customEx">
+                    <label class="custom-control-label" for="NO2">NO2</label>
+                </div>
+                <div class="custom-control custom-radio">
+                    <input type="radio" class="custom-control-input" id="OXY" name="param" value="customEx">
+                    <label class="custom-control-label" for="OXY">OXY hoà tan</label>
+                </div>
+                <div class="custom-control custom-radio">
+                    <input type="radio" class="custom-control-input" id="H2S" name="param" value="customEx">
+                    <label class="custom-control-label" for="H2S">H2S</label>
+                </div>
+                <div class="custom-control custom-radio">
+                    <input type="radio" class="custom-control-input" id="salt" name="param" value="customEx">
+                    <label class="custom-control-label" for="salt">Độ Mặn</label>
+                </div>
+                <div class="custom-control custom-radio">
+                    <input type="radio" class="custom-control-input" id="PH" name="param" value="customEx">
+                    <label class="custom-control-label" for="PH">PH</label>
+                </div>
+
+                <div class="custom-control custom-radio">
+                    <input type="radio" class="custom-control-input" id="tem" name="param" value="customEx">
+                    <label class="custom-control-label" for="tem">Nhiệt độ</label>
+                </div>
+            </li>
+            <li class="nav-item" style="color:white">
+                <a class="nav-link" href="#">
+                    <i style="font-size:18px; color:white" class="fa">&#xf1da;</i>
+
+                    <span>Lịch sử quan trắc</span>
+                </a>
+            </li>
+        </ul>
+        <div id="content-wrapper" class="d-flex flex-column">
+
+            <!-- Main Content -->
+            <div id="content" class="position-relative">
+                <!-- Topbar -->
+                <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+                    <marquee direction="left" scrollamount=”80″ style="color:firebrick">HỆ THỐNG QUAN TRẮC NGUỒN NƯỚC TỰ ĐỘNG TẠI ĐẦM NUÔI TÔM</marquee>
+                    <ul class="navbar-nav ml-auto">
+                        <!-- Nav Item - User Information -->
+                        <li class="nav-item dropdown no-arrow">
+                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown"
+                               aria-haspopup="true" aria-expanded="false">
+                                <span class="mr-5 d-none d-lg-inline text-gray-600 small" style="color:black"></span>
+                                <i class="far fa-clock" id="dongho" slot="padding-left:1.8em"></i>
+                            </a>
+                            <!-- Dropdown - User Information -->
+                            <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Profile
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Settings
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Activity Log
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                                    <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Logout
+                                </a>
+                            </div>
+                        </li>
+
+                    </ul>
+                </nav>
+                <!-- End of Topbar -->
+                <!-- Begin Page Content -->
+                <div style="margin-left:30%; font-size:large"><span>Thiết bị {X} thuộc huyện {Y} đang được giám sát tại thời điểm {}</span></div>
+
+                <div style="margin-top:10px; margin-left:45%;font-weight: 100">
+                    <button type="button" class="btn btn-success">Vỉew All By Chart</button>
+                </div>
+                <div class="container-fluid d-flex">
+
+                    <div ui-view></div> 
+                </div>
+                <!-- /.container-fluid -->
+                <div class="position-absolute" style="bottom: 0; width: 100%">
+                    <div class="position-absolute" style="bottom: 5px; width: 100%; background-color:lightgrey;height: 150px;">
+                        <span style="margin-left: 40%">Thông tin cảnh báo vào khuyến cáo</span>
+                    </div>
+
+
+                </div>
+            </div>
+
+
+        </div>
+        <!-- End of Content Wrapper -->
+
+    </div>
+    <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
+    <!-- Logout Modal-->
+    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                    <a class="btn btn-primary" href="login.html">Logout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="~/Content/Admin/js/jquery-3.1.1.min.js"></script>
+    <script src="~/Content/Admin/js/plugins/jquery-ui/jquery-ui.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.min.js"></script>
+    <script src="~/Content/Admin/js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="~/Content/Admin/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+    <script src="~/Content/Admin/js/bootstrap/bootstrap.min.js"></script>
+    <script src="~/Content/Admin/js/plugins/moment/moment.min.js"></script>
+    <script src="~/Content/Admin/js/angular/angular.min.js"></script>
+    <script src="~/Content/Admin/js/plugins/angular-loading-bar/src/loading-bar.js"></script>
+    <script src="~/Content/Admin/js/plugins/chosen/chosen.js"></script>
+    <script src="~/Content/Admin/js/plugins/chosen/chosen.jquery.js"></script>
+    <script src="~/Content/Admin/js/ui-bootstrap.js"></script>
+    <script src="~/Content/Admin/js/bootstrap/ui-bootstrap-tpls-2.5.0.min.js"></script>
+    <script src="~/Content/Admin/datetimepicker/js/datetime-picker.js"></script>
+    <script src="~/Content/Admin/js/ng-ckeditor/ng-ckeditor.js"></script>
+
+    <script src="~/Content/Admin/js/ckeditor/ckeditor.js"></script>
+    <script src="~/Content/Admin/js/angular/angular-sanitize.js"></script>
+    <script src="~/Content/Admin/js/ui-router/angular-ui-router.js"></script>
+    <script src="~/Content/Admin/js/plugins/checklist-model/checklist-model.js"></script>
+    <script src="~/Content/Admin/js/plugins/oclazyload/dist/ocLazyLoad.js"></script>
+    <script src="~/Content/Admin/js/plugins/pace/pace.min.js"></script>
+    <script src="~/Content/Admin/js/plugins/toastr/toastr.min.js"></script>
+    <script src="~/Content/Admin/js/inspinia.js"></script>
+    <script src="~/Content/Admin/js/plugins/dataTables/datatables.min.js"></script>
+    <script src="~/Content/Admin/js/plugins/dataTables/angular-datatables.min.js"></script>
+    <script src="~/Content/Admin/js/plugins/dataTables/angular-datatables.buttons.min.js"></script>
+    <script src="~/Content/Admin/js/plugins/ngBootbox/ngBootbox.js"></script>
+    <script src="~/Content/Admin/js/plugins/bootbox/bootbox.js"></script>
+    <script src="~/Content/Admin/js/angular/angular-local-storage.js"></script>
+    <script src="~/Assets/client/vendor/jquery/jquery.min.js"></script>
+    <script src="~/Shared/common.js"></script>
+    <script src="~/Assets/client/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="~/app/services/commonService.js"></script>
+   
+    <script src="~/app/services/notificationService.js"></script>
+
+    <script src="~/Assets/client/js/sb-admin-2.min.js"></script>
+
+    <script src="~/home/home.js"></script>
+    <script src="~/home/controller/deviceCtrl.js"></script>
+    <script src="~/home/controller/historyCtrl.js"></script>
+    <script src="~/home/controller/paramCtrl.js"></script>
+</body>
+
+</html>
